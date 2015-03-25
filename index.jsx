@@ -23,7 +23,8 @@ module.exports = React.createClass({
     componentDidMount() {
         this.scrollbar = new GeminiScrollbar({
             element: this.getDOMNode(),
-            autoshow: this.props.autoshow
+            autoshow: this.props.autoshow,
+            createElements: false
         }).create();
     },
 
@@ -42,7 +43,15 @@ module.exports = React.createClass({
 
         return (
             <div {...other} className={classes}>
-                {children}
+                <div className='gm-scrollbar -vertical'>
+                    <div className='thumb'></div>
+                </div>
+                <div className='gm-scrollbar -horizontal'>
+                    <div className='thumb'></div>
+                </div>
+                <div className='gm-scroll-view'>
+                    {children}
+                </div>
             </div>
         );
     }
