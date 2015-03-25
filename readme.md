@@ -17,5 +17,10 @@ var GeminiScrollbar = require('react-gemini-scrollbar');
 </GeminiScrollbar>
 ```
 
+### Styles
+```
+<link src="node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css">
+```
+
 ### Props
 * `autoshow`: show scrollbars upon hovering
