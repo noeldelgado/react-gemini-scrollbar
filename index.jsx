@@ -28,6 +28,10 @@ module.exports = React.createClass({
         }).create();
     },
 
+    componentDidUpdate() {
+        this.scrollbar.update();
+    },
+
     componentWillUnmount() {
         this.scrollbar.destroy();
         this.scrollbar = null;
