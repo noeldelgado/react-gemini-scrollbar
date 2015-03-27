@@ -2,6 +2,8 @@
 
 React component for creating custom scrollbars with native scrolling using [gemini-scrollbar](https://github.com/noeldelgado/gemini-scrollbar).
 
+current version: `1.0.6`
+
 ## Installation
 
 **NPM**
@@ -30,13 +32,13 @@ var GeminiScrollbar = require('react-gemini-scrollbar');
 @import url(node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css);
 ```
 
-### Props
+## Props
 * `autoshow`: show scrollbars upon hovering
 
 
-### Customize
+## Customization
 
-you can change the styles of the scrollbars via CSS. Ex:
+You can change the styles of the scrollbars using CSS. Ex:
 
 ```css
 /* override gemini-scrollbar default styles */
@@ -52,12 +54,10 @@ you can change the styles of the scrollbars via CSS. Ex:
 }
 
 /* scrollbar thumb */
-.gm-scrollbar .thumb::after {
+.gm-scrollbar .thumb {
   background-color: rebeccapurple;
 }
-
-/* scrollbar thumb :hover */
-.gm-scrollbar .thumb:hover::after {
+.gm-scrollbar .thumb:hover {
   background-color: fuchsia;
 }
 ```
@@ -70,5 +70,10 @@ alternative is to pass a `className` to the component. Then you can use that
 ```
 
 ```css
-.my-awesome-scrollbar .gm-scrollbar .thumb::after {...}
+.my-awesome-scrollbar .gm-scrollbar.-vertical {...}
+.my-awesome-scrollbar .gm-scrollbar.-horizontal {...}
+.my-awesome-scrollbar .gm-scrollbar .thumb {...}
 ```
+
+## License
+MIT © [Noel Delgado](http://pixelia.me/)
