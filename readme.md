@@ -2,7 +2,7 @@
 
 React component for creating custom scrollbars with native scrolling using [gemini-scrollbar](https://github.com/noeldelgado/gemini-scrollbar).
 
-current version: `1.0.6`
+current version: `1.0.7`
 
 ## Installation
 
