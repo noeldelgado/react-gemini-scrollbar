@@ -2,8 +2,6 @@
 
 React component for creating custom overlay-scrollbars with native scrolling mechanism (using [gemini-scrollbar](https://github.com/noeldelgado/gemini-scrollbar)).
 
-current version: `1.0.7`
-
 ## Installation
 
 **NPM**
