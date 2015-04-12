@@ -1,16 +1,20 @@
 # react-gemini-scrollbar
+[![npm-image](https://img.shields.io/npm/v/react-gemini-scrollbar.svg?style=flat-square)](https://www.npmjs.com/package/react-gemini-scrollbar)
 
 React component for creating custom overlay-scrollbars with native scrolling mechanism (using [gemini-scrollbar](https://github.com/noeldelgado/gemini-scrollbar)).
 
 ## Installation
 
 **NPM**
+
 ```sh
 npm install react-gemini-scrollbar --save
 ```
 
 ## Usage
+
 **JSX**
+
 ```js
 var GeminiScrollbar = require('react-gemini-scrollbar');
 
