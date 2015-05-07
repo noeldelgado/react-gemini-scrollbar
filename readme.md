@@ -78,7 +78,7 @@ alternative is to pass a `className` to the component. Then you can use that
 ```
 
 # Build
-You will need a global `babel` and run `npm run prepublish`.
+You will need a global `babel` and run `npm run dist`.
 
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
