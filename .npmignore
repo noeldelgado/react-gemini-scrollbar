@@ -1,8 +1,5 @@
 #### joe made this: https://goel.io/joe
 
-# Ignore dist on github
-/dist
-
 #####=== Node ===#####
 
 # Logs
@@ -45,6 +42,7 @@ npm-debug.log
 
 # Icon must end with two \r
 Icon
+
 
 # Thumbnails
 ._*

@@ -53,7 +53,7 @@ module.exports = React.createClass({
                 <div className='gm-scrollbar -horizontal'>
                     <div className='thumb'></div>
                 </div>
-                <div className='gm-scroll-view'>
+                <div className='gm-scroll-view' ref='scroll-view'>
                     {children}
                 </div>
             </div>
