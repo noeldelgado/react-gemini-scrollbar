@@ -77,5 +77,8 @@ alternative is to pass a `className` to the component. Then you can use that
 .my-awesome-scrollbar .gm-scrollbar .thumb {...}
 ```
 
+# Build
+You will need a global `babel` and run `npm run dist`.
+
 ## License
 MIT © [Noel Delgado](http://pixelia.me/)
