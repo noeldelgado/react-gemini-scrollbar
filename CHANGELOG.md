@@ -2,15 +2,15 @@
 
 Features:
 
-- Offer the compiled js version
+- [e9710fb](../../commit/e9710fb) Offer the compiled js version
 
 Updates:
 
-- Remove browserify.transform field from `package.json`
+- [e9710fb](../../commit/e9710fb) Remove browserify.transform field from `package.json`
 
 
 ## 1.0.9 (2015-05-06)
 
 Updates:
 
-- Support for React v0.13+
+- [e99a010](../../commit/e99a010) Support for React v0.13+
