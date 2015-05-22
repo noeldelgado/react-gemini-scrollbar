@@ -1,3 +1,9 @@
+## 1.1.1 (2015-05-21)
+
+Patch:
+
+- [28913d6](../../commit/28913d6) Added support for react 0.12
+
 ## 1.1.0 (2015-05-07)
 
 Features:
