@@ -1,9 +1,16 @@
 # react-gemini-scrollbar
 [![npm-image](https://img.shields.io/npm/v/react-gemini-scrollbar.svg?style=flat-square)](https://www.npmjs.com/package/react-gemini-scrollbar)
 
-React component for creating custom overlay-scrollbars with native scrolling mechanism (using [gemini-scrollbar](https://github.com/noeldelgado/gemini-scrollbar)).
+React component for creating custom overlay-scrollbars with native scrolling mechanism for web applications (when needed)
 
-## Installation
+**Important:**
+
+- It only create the custom scrollbars (bind events, etc) when the OS does not supports “overlay-scrollbars” natively, otherwise leave the scrollbars intact
+- IE9+ support
+
+*Uses [gemini-scrollbar][1] under the hood, check the gemini-scrollbar [repo][1] for more information.*
+
+## Install
 
 **NPM**
 
@@ -25,11 +32,13 @@ var GeminiScrollbar = require('react-gemini-scrollbar');
 ```
 
 **LESS**
+
 ```less
 @import (css) "node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css";
 ```
 
 **CSS**
+
 ```css
 @import url(node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css);
 ```
@@ -77,8 +86,8 @@ alternative is to pass a `className` to the component. Then you can use that
 .my-awesome-scrollbar .gm-scrollbar .thumb {...}
 ```
 
-# Build
-You will need a global `babel` and run `npm run dist`.
-
 ## License
-MIT © [Noel Delgado](http://pixelia.me/)
+MIT © [Noel Delgado][0]
+
+[0]: http://pixelia.me/
+[1]: https://github.com/noeldelgado/gemini-scrollbar
