@@ -23,5 +23,9 @@
   "homepage": "https://github.com/noeldelgado/react-gemini-scrollbar",
   "dependencies": {
     "gemini-scrollbar": "1.x.x"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   }
 }
