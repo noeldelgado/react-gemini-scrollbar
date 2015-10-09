@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var GeminiScrollbar = require('gemini-scrollbar');
 
 module.exports = React.createClass({
@@ -22,7 +23,7 @@ module.exports = React.createClass({
 
     componentDidMount() {
         this.scrollbar = new GeminiScrollbar({
-            element: this.getDOMNode(),
+            element: ReactDOM.findDOMNode(this),
             autoshow: this.props.autoshow,
             createElements: false
         }).create();

@@ -1,10 +1,11 @@
 'use strict';
 
-var _objectWithoutProperties = function (obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; };
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
 var React = require('react');
+var ReactDOM = require('react-dom');
 var GeminiScrollbar = require('gemini-scrollbar');
 
 module.exports = React.createClass({
@@ -28,7 +29,7 @@ module.exports = React.createClass({
 
     componentDidMount: function componentDidMount() {
         this.scrollbar = new GeminiScrollbar({
-            element: this.getDOMNode(),
+            element: ReactDOM.findDOMNode(this),
             autoshow: this.props.autoshow,
             createElements: false
         }).create();
