@@ -1,3 +1,9 @@
+## 2.0.0 (2015-10-08)
+
+Incompatible changes:
+
+- [#6](../../issues/6) React 0.14 update
+
 ## 1.1.1 (2015-05-21)
 
 Patch:
