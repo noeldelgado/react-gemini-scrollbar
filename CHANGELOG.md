@@ -1,8 +1,14 @@
+## 2.0.1 (2015-10-09)
+
+Patch:
+
+- [#10](../../pull/10) Add react and react-dom 0.14 peer dependencies
+
 ## 2.0.0 (2015-10-08)
 
 Incompatible changes:
 
-- [#6](../../issues/6) React 0.14 update
+- [#6](../../pull/6) React 0.14 update
 
 ## 1.1.1 (2015-05-21)
 
