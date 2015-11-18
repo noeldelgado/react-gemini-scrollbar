@@ -44,7 +44,8 @@ var GeminiScrollbar = require('react-gemini-scrollbar');
 ```
 
 ## Props
-* `autoshow`: show scrollbars upon hovering
+* `autoshow`: show scrollbars upon hovering  
+* `forceGemini`: add option to force Gemini scrollbars even if native overlay-scrollbars are available
 
 
 ## Customization
@@ -90,4 +91,4 @@ alternative is to pass a `className` to the component. Then you can use that
 MIT © [Noel Delgado][0]
 
 [0]: http://pixelia.me/
-[1]: https://github.com/noeldelgado/gemini-scrollbar
+[1]: https://github.com/noeldelgado/gemini-scrollbar  
