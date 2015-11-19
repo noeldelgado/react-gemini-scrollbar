@@ -1,3 +1,9 @@
+## 2.1.0 (2015-11-19)
+
+Features:
+
+- [#12](../../pull/12) Add `forceGemini` config option
+
 ## 2.0.1 (2015-10-09)
 
 Patch:

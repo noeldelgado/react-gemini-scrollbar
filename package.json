@@ -1,6 +1,6 @@
 {
   "name": "react-gemini-scrollbar",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "React component for custom scrollbars with native scrolling",
   "main": "dist/index.js",
   "scripts": {
