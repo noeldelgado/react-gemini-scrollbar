@@ -6,12 +6,14 @@ module.exports = React.createClass({
     displayName: 'GeminiScrollbar',
 
     propTypes: {
-        autoshow: React.PropTypes.bool
+        autoshow: React.PropTypes.bool,
+        forceGemini: React.PropTypes.bool
     },
 
     getDefaultProps() {
         return {
-            autoshow: false
+            autoshow: false,
+            forceGemini: false
         }
     },
 
@@ -25,6 +27,7 @@ module.exports = React.createClass({
         this.scrollbar = new GeminiScrollbar({
             element: ReactDOM.findDOMNode(this),
             autoshow: this.props.autoshow,
+            forceGemini: this.props.forceGemini,
             createElements: false
         }).create();
     },
