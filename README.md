@@ -31,16 +31,18 @@ var GeminiScrollbar = require('react-gemini-scrollbar');
 </GeminiScrollbar>
 ```
 
-**LESS**
+**Don’t forget the gemini stylesheet**
 
-```less
-@import (css) "node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css";
+***NPM@2 located at:***
+
+```
+node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css
 ```
 
-**CSS**
+***NPM@3 located at:***
 
-```css
-@import url(node_modules/react-gemini-scrollbar/node_modules/gemini-scrollbar/gemini-scrollbar.css);
+```
+node_modules/gemini-scrollbar/gemini-scrollbar.css
 ```
 
 ## Props
