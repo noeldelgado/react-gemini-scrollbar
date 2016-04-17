@@ -7,7 +7,8 @@ module.exports = React.createClass({
 
     propTypes: {
         autoshow: React.PropTypes.bool,
-        forceGemini: React.PropTypes.bool
+        forceGemini: React.PropTypes.bool,
+        onResize: React.PropTypes.func,
     },
 
     getDefaultProps() {
@@ -28,7 +29,8 @@ module.exports = React.createClass({
             element: ReactDOM.findDOMNode(this),
             autoshow: this.props.autoshow,
             forceGemini: this.props.forceGemini,
-            createElements: false
+            createElements: false,
+            onResize: this.props.onResize,
         }).create();
     },
 
@@ -42,7 +44,7 @@ module.exports = React.createClass({
     },
 
     render() {
-        var {className, children, ...other} = this.props,
+        var {className, children, onResize, ...other} = this.props,
             classes = '';
 
         if (className) {
