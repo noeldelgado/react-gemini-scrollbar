@@ -1,3 +1,9 @@
+## 2.1.2 (2016-05-19)
+
+Patch:
+
+- [#20](../../pull/20) fix / null scrollbar for componentWillUnmount
+
 ## 2.1.1 (2016-04-12)
 
 Patch:
