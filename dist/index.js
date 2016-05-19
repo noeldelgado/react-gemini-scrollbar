@@ -43,7 +43,9 @@ module.exports = React.createClass({
     },
 
     componentWillUnmount: function componentWillUnmount() {
-        this.scrollbar.destroy();
+        if (this.scrollbar) {
+            this.scrollbar.destroy();
+        }
         this.scrollbar = null;
     },
 
