@@ -1,3 +1,9 @@
+## 2.1.3 (2016-05-28)
+
+Patch:
+
+- Lock gemini-scrollbar dep to v1.3.x for resize event compatibility
+
 ## 2.1.2 (2016-05-19)
 
 Patch:
