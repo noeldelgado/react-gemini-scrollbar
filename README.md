@@ -1,6 +1,6 @@
 # react-gemini-scrollbar
-[![npm-image](https://img.shields.io/npm/v/react-gemini-scrollbar.svg?style=flat-square)](https://www.npmjs.com/package/react-gemini-scrollbar)
-![license-image](https://img.shields.io/npm/l/react-gemini-scrollbar.svg?style=flat-square)
+[![npm-image](https://img.shields.io/npm/v/react-gemini-scrollbar.svg)](https://www.npmjs.com/package/react-gemini-scrollbar)
+![license-image](https://img.shields.io/npm/l/react-gemini-scrollbar.svg)
 
 React component for creating custom overlay-scrollbars with native scrolling mechanism for web applications (when needed)
 
@@ -47,7 +47,7 @@ node_modules/gemini-scrollbar/gemini-scrollbar.css
 ```
 
 ## Props
-* `autoshow`: show scrollbars upon hovering  
+* `autoshow`: show scrollbars upon hovering
 * `forceGemini`: add option to force Gemini scrollbars even if native overlay-scrollbars are available
 
 
@@ -94,4 +94,4 @@ alternative is to pass a `className` to the component. Then you can use that
 MIT © [Noel Delgado][0]
 
 [0]: http://pixelia.me/
-[1]: https://github.com/noeldelgado/gemini-scrollbar  
+[1]: https://github.com/noeldelgado/gemini-scrollbar
