@@ -1,3 +1,9 @@
+## 2.1.4 (2015-07-05)
+
+Patch:
+
+- [#25](../../issues/25) React 15.2.0 and unknown props
+
 ## 2.1.3 (2016-05-28)
 
 Patch:
