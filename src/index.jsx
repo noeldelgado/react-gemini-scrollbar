@@ -44,7 +44,7 @@ module.exports = React.createClass({
     },
 
     render() {
-        var {className, children, ...other} = this.props,
+        var {className, children, autoshow, forceGemini, ...other} = this.props,
             classes = '';
 
         if (className) {
