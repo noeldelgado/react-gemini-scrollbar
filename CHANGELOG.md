@@ -1,3 +1,9 @@
+## 2.1.5 (2015-07-05)
+
+Patch:
+
+- [#27](../../pull/27) ship compiled version
+
 ## 2.1.4 (2015-07-05)
 
 Patch:
