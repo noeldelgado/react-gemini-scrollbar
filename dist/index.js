@@ -23,6 +23,7 @@ module.exports = React.createClass({
         };
     },
 
+
     /**
      * Holds the reference to the GeminiScrollbar instance.
      * @property scrollbar <public> [Object]
@@ -37,23 +38,22 @@ module.exports = React.createClass({
             createElements: false
         }).create();
     },
-
     componentDidUpdate: function componentDidUpdate() {
         this.scrollbar.update();
     },
-
     componentWillUnmount: function componentWillUnmount() {
         if (this.scrollbar) {
             this.scrollbar.destroy();
         }
         this.scrollbar = null;
     },
-
     render: function render() {
         var _props = this.props;
         var className = _props.className;
         var children = _props.children;
-        var other = _objectWithoutProperties(_props, ['className', 'children']);
+        var autoshow = _props.autoshow;
+        var forceGemini = _props.forceGemini;
+        var other = _objectWithoutProperties(_props, ['className', 'children', 'autoshow', 'forceGemini']);
         var classes = '';
 
         if (className) {
