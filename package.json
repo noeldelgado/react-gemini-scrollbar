@@ -1,10 +1,10 @@
 {
   "name": "react-gemini-scrollbar",
-  "version": "2.1.1",
+  "version": "2.1.5",
   "description": "React component for custom scrollbars with native scrolling",
   "main": "dist/index.js",
   "scripts": {
-    "dist": "mkdir -p dist && babel src/index.jsx -u -o dist/index.js --stage 1"
+    "dist": "mkdir -p dist && babel src/index.jsx -u -o dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,16 @@
   "license": "MIT",
   "homepage": "https://github.com/noeldelgado/react-gemini-scrollbar",
   "dependencies": {
-    "gemini-scrollbar": "1.x.x"
+    "gemini-scrollbar": "1.3.x"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0",
     "react-dom": "^0.14.0 || ^15.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.5.0"
   }
 }

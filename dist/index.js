@@ -24,6 +24,7 @@ module.exports = React.createClass({
         };
     },
 
+
     /**
      * Holds the reference to the GeminiScrollbar instance.
      * @property scrollbar <public> [Object]
@@ -39,22 +40,23 @@ module.exports = React.createClass({
             onResize: this.props.onResize
         }).create();
     },
-
     componentDidUpdate: function componentDidUpdate() {
         this.scrollbar.update();
     },
-
     componentWillUnmount: function componentWillUnmount() {
-        this.scrollbar.destroy();
+        if (this.scrollbar) {
+            this.scrollbar.destroy();
+        }
         this.scrollbar = null;
     },
-
     render: function render() {
         var _props = this.props;
         var className = _props.className;
         var children = _props.children;
+        var autoshow = _props.autoshow;
+        var forceGemini = _props.forceGemini;
         var onResize = _props.onResize;
-        var other = _objectWithoutProperties(_props, ['className', 'children', 'onResize']);
+        var other = _objectWithoutProperties(_props, ['className', 'children', 'autoshow', 'forceGemini', 'onResize']);
         var classes = '';
 
         if (className) {

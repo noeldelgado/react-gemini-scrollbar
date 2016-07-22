@@ -1,3 +1,27 @@
+## 2.1.5 (2015-07-05)
+
+Patch:
+
+- [#27](../../pull/27) ship compiled version
+
+## 2.1.4 (2015-07-05)
+
+Patch:
+
+- [#25](../../issues/25) React 15.2.0 and unknown props
+
+## 2.1.3 (2016-05-28)
+
+Patch:
+
+- Lock gemini-scrollbar dep to v1.3.x for resize event compatibility
+
+## 2.1.2 (2016-05-19)
+
+Patch:
+
+- [#20](../../pull/20) fix / null scrollbar for componentWillUnmount
+
 ## 2.1.1 (2016-04-12)
 
 Patch:
