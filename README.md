@@ -27,7 +27,7 @@ npm install react-gemini-scrollbar --save
 var GeminiScrollbar = require('react-gemini-scrollbar');
 
 <GeminiScrollbar>
-    <h1>The content.<h1>
+    <h1>The content.</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 </GeminiScrollbar>
 ```
