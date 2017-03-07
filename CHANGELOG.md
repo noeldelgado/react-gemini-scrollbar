@@ -1,3 +1,9 @@
+## 2.2.0 (2017-03-06)
+
+Feature:
+
+- [#19](../../pull/19) Add resizer and expose onResize hook
+
 ## 2.1.5 (2015-07-05)
 
 Patch:
