@@ -1,3 +1,9 @@
+## 2.3.0 (2017-03-06)
+
+Feature:
+
+- Add `minThumbSize` config option
+
 ## 2.2.0 (2017-03-06)
 
 Feature:

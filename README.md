@@ -47,9 +47,12 @@ node_modules/gemini-scrollbar/gemini-scrollbar.css
 ```
 
 ## Props
-* `autoshow`: show scrollbars upon hovering
-* `forceGemini`: add option to force Gemini scrollbars even if native overlay-scrollbars are available
-
+name | type | default | description
+|:--- | :--- | :--- | :---
+autoshow | bool | `false` | Show scrollbars upon hovering
+forceGemini | bool | `false` | Force Gemini scrollbars even if native overlay-scrollbars are available. Useful for development.
+onResize | func | `null` | Hook by which clients can be notified of resize events.
+minThumbSize | number | `20` | Sets the minimum size of the thumbs (in pixels).
 
 ## Customization
 

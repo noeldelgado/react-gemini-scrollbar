@@ -9,12 +9,14 @@ module.exports = React.createClass({
         autoshow: React.PropTypes.bool,
         forceGemini: React.PropTypes.bool,
         onResize: React.PropTypes.func,
+        minThumbSize: React.PropTypes.number
     },
 
     getDefaultProps() {
         return {
             autoshow: false,
-            forceGemini: false
+            forceGemini: false,
+            minThumbSize: 20
         }
     },
 
@@ -31,6 +33,7 @@ module.exports = React.createClass({
             forceGemini: this.props.forceGemini,
             createElements: false,
             onResize: this.props.onResize,
+            minThumbSize: this.props.minThumbSize
         }).create();
     },
 
@@ -46,7 +49,7 @@ module.exports = React.createClass({
     },
 
     render() {
-        var {className, children, autoshow, forceGemini, onResize, ...other} = this.props,
+        var {className, children, autoshow, forceGemini, onResize, minThumbSize, ...other} = this.props,
             classes = '';
 
         if (className) {
@@ -61,7 +64,7 @@ module.exports = React.createClass({
                 <div className='gm-scrollbar -horizontal'>
                     <div className='thumb'></div>
                 </div>
-                <div className='gm-scroll-view' ref='scroll-view'>
+                <div className='gm-scroll-view'>
                     {children}
                 </div>
             </div>

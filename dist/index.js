@@ -14,13 +14,15 @@ module.exports = React.createClass({
     propTypes: {
         autoshow: React.PropTypes.bool,
         forceGemini: React.PropTypes.bool,
-        onResize: React.PropTypes.func
+        onResize: React.PropTypes.func,
+        minThumbSize: React.PropTypes.number
     },
 
     getDefaultProps: function getDefaultProps() {
         return {
             autoshow: false,
-            forceGemini: false
+            forceGemini: false,
+            minThumbSize: 20
         };
     },
 
@@ -37,7 +39,8 @@ module.exports = React.createClass({
             autoshow: this.props.autoshow,
             forceGemini: this.props.forceGemini,
             createElements: false,
-            onResize: this.props.onResize
+            onResize: this.props.onResize,
+            minThumbSize: this.props.minThumbSize
         }).create();
     },
     componentDidUpdate: function componentDidUpdate() {
@@ -50,14 +53,15 @@ module.exports = React.createClass({
         this.scrollbar = null;
     },
     render: function render() {
-        var _props = this.props;
-        var className = _props.className;
-        var children = _props.children;
-        var autoshow = _props.autoshow;
-        var forceGemini = _props.forceGemini;
-        var onResize = _props.onResize;
-        var other = _objectWithoutProperties(_props, ['className', 'children', 'autoshow', 'forceGemini', 'onResize']);
-        var classes = '';
+        var _props = this.props,
+            className = _props.className,
+            children = _props.children,
+            autoshow = _props.autoshow,
+            forceGemini = _props.forceGemini,
+            onResize = _props.onResize,
+            minThumbSize = _props.minThumbSize,
+            other = _objectWithoutProperties(_props, ['className', 'children', 'autoshow', 'forceGemini', 'onResize', 'minThumbSize']),
+            classes = '';
 
         if (className) {
             classes += ' ' + className;
@@ -78,7 +82,7 @@ module.exports = React.createClass({
             ),
             React.createElement(
                 'div',
-                { className: 'gm-scroll-view', ref: 'scroll-view' },
+                { className: 'gm-scroll-view' },
                 children
             )
         );
