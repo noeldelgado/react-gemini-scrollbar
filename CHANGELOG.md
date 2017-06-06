@@ -1,3 +1,9 @@
+## 2.3.1 (2017-06-06)
+
+Patch:
+
+- [33](../../pull/33) Use plain JavaScript classes instead of React.createClass
+
 ## 2.3.0 (2017-03-06)
 
 Feature:

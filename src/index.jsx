@@ -2,15 +2,15 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var GeminiScrollbar = require('gemini-scrollbar');
 
-module.exports = React.createClass({
-    displayName: 'GeminiScrollbar',
+module.exports = class extends React.Component {
+    displayName: 'GeminiScrollbar'
 
     propTypes: {
         autoshow: React.PropTypes.bool,
         forceGemini: React.PropTypes.bool,
         onResize: React.PropTypes.func,
         minThumbSize: React.PropTypes.number
-    },
+    }
 
     getDefaultProps() {
         return {
@@ -18,13 +18,13 @@ module.exports = React.createClass({
             forceGemini: false,
             minThumbSize: 20
         }
-    },
+    }
 
     /**
      * Holds the reference to the GeminiScrollbar instance.
      * @property scrollbar <public> [Object]
      */
-    scrollbar: null,
+    scrollbar: null
 
     componentDidMount() {
         this.scrollbar = new GeminiScrollbar({
@@ -35,18 +35,18 @@ module.exports = React.createClass({
             onResize: this.props.onResize,
             minThumbSize: this.props.minThumbSize
         }).create();
-    },
+    }
 
     componentDidUpdate() {
         this.scrollbar.update();
-    },
+    }
 
     componentWillUnmount() {
         if (this.scrollbar) {
             this.scrollbar.destroy();
         }
         this.scrollbar = null;
-    },
+    }
 
     render() {
         var {className, children, autoshow, forceGemini, onResize, minThumbSize, ...other} = this.props,
@@ -70,4 +70,4 @@ module.exports = React.createClass({
             </div>
         );
     }
-});
+}
