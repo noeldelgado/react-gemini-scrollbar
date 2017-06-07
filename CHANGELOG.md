@@ -1,3 +1,9 @@
+## 2.3.2 (2017-06-08)
+
+Patch:
+
+- [35](../../pull/35) Use the prop-types package instead accessing PropTypes via the main React package; add package-lock.json
+
 ## 2.3.1 (2017-06-06)
 
 Patch:
