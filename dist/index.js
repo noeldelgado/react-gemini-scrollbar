@@ -15,32 +15,18 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var React = require('react');
 var ReactDOM = require('react-dom');
 var GeminiScrollbar = require('gemini-scrollbar');
+var PropTypes = require('prop-types');
 
-module.exports = function (_React$Component) {
-    _inherits(_class2, _React$Component);
+var ReactGeminiScrollbar = function (_React$Component) {
+    _inherits(ReactGeminiScrollbar, _React$Component);
 
-    function _class2() {
-        _classCallCheck(this, _class2);
+    function ReactGeminiScrollbar() {
+        _classCallCheck(this, ReactGeminiScrollbar);
 
-        return _possibleConstructorReturn(this, (_class2.__proto__ || Object.getPrototypeOf(_class2)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (ReactGeminiScrollbar.__proto__ || Object.getPrototypeOf(ReactGeminiScrollbar)).apply(this, arguments));
     }
 
-    _createClass(_class2, [{
-        key: 'getDefaultProps',
-        value: function getDefaultProps() {
-            return {
-                autoshow: false,
-                forceGemini: false,
-                minThumbSize: 20
-            };
-        }
-
-        /**
-         * Holds the reference to the GeminiScrollbar instance.
-         * @property scrollbar <public> [Object]
-         */
-
-    }, {
+    _createClass(ReactGeminiScrollbar, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.scrollbar = new GeminiScrollbar({
@@ -52,6 +38,12 @@ module.exports = function (_React$Component) {
                 minThumbSize: this.props.minThumbSize
             }).create();
         }
+
+        /**
+         * Holds the reference to the GeminiScrollbar instance.
+         * @property scrollbar <public> [Object]
+         */
+
     }, {
         key: 'componentDidUpdate',
         value: function componentDidUpdate() {
@@ -104,5 +96,20 @@ module.exports = function (_React$Component) {
         }
     }]);
 
-    return _class2;
+    return ReactGeminiScrollbar;
 }(React.Component);
+
+ReactGeminiScrollbar.propTypes = {
+    autoshow: PropTypes.bool,
+    forceGemini: PropTypes.bool,
+    onResize: PropTypes.func,
+    minThumbSize: PropTypes.number
+};
+
+ReactGeminiScrollbar.defaultProps = {
+    autoshow: false,
+    forceGemini: false,
+    minThumbSize: 20
+};
+
+module.exports = ReactGeminiScrollbar;

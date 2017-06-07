@@ -1,24 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var GeminiScrollbar = require('gemini-scrollbar');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const GeminiScrollbar = require('gemini-scrollbar');
+const PropTypes = require('prop-types');
 
-module.exports = class extends React.Component {
+class ReactGeminiScrollbar extends React.Component {
     displayName: 'GeminiScrollbar'
-
-    propTypes: {
-        autoshow: React.PropTypes.bool,
-        forceGemini: React.PropTypes.bool,
-        onResize: React.PropTypes.func,
-        minThumbSize: React.PropTypes.number
-    }
-
-    getDefaultProps() {
-        return {
-            autoshow: false,
-            forceGemini: false,
-            minThumbSize: 20
-        }
-    }
 
     /**
      * Holds the reference to the GeminiScrollbar instance.
@@ -49,7 +35,7 @@ module.exports = class extends React.Component {
     }
 
     render() {
-        var {className, children, autoshow, forceGemini, onResize, minThumbSize, ...other} = this.props,
+        const {className, children, autoshow, forceGemini, onResize, minThumbSize, ...other} = this.props,
             classes = '';
 
         if (className) {
@@ -71,3 +57,18 @@ module.exports = class extends React.Component {
         );
     }
 }
+
+ReactGeminiScrollbar.propTypes = {
+    autoshow: PropTypes.bool,
+    forceGemini: PropTypes.bool,
+    onResize: PropTypes.func,
+    minThumbSize: PropTypes.number
+}
+
+ReactGeminiScrollbar.defaultProps = {
+    autoshow: false,
+    forceGemini: false,
+    minThumbSize: 20
+}
+
+module.exports = ReactGeminiScrollbar;
