@@ -93,6 +93,10 @@ alternative is to pass a `className` to the component. Then you can use that
 .my-awesome-scrollbar .gm-scrollbar .thumb {...}
 ```
 
+## Related
+
+- [gemini-scrollbar](https://github.com/noeldelgado/gemini-scrollbar) - Vanilla JS version
+
 ## License
 MIT © [Noel Delgado][0]
 
