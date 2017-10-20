@@ -2,6 +2,11 @@
 
 Patch:
 
+- Update gemini-scrollbar dependency version
+- `minThumbSize` option should be compatible now
+
+Patch:
+
 - [36](../../pull/36) Add react 16.x.x support
 
 
