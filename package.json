@@ -1,6 +1,6 @@
 {
   "name": "react-gemini-scrollbar",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "React component for custom scrollbars with native scrolling",
   "main": "dist/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "license": "MIT",
   "homepage": "https://github.com/noeldelgado/react-gemini-scrollbar",
   "dependencies": {
-    "gemini-scrollbar": "^1.4.2"
+    "gemini-scrollbar": "^1.5.3"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
