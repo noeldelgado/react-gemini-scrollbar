@@ -67,8 +67,9 @@ var ReactGeminiScrollbar = function (_React$Component) {
                 forceGemini = _props.forceGemini,
                 onResize = _props.onResize,
                 minThumbSize = _props.minThumbSize,
-                other = _objectWithoutProperties(_props, ['className', 'children', 'autoshow', 'forceGemini', 'onResize', 'minThumbSize']),
-                classes = '';
+                other = _objectWithoutProperties(_props, ['className', 'children', 'autoshow', 'forceGemini', 'onResize', 'minThumbSize']);
+
+            var classes = '';
 
             if (className) {
                 classes += ' ' + className;

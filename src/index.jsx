@@ -35,8 +35,8 @@ class ReactGeminiScrollbar extends React.Component {
     }
 
     render() {
-        const {className, children, autoshow, forceGemini, onResize, minThumbSize, ...other} = this.props,
-            classes = '';
+        const { className, children, autoshow, forceGemini, onResize, minThumbSize, ...other } = this.props;
+        let classes = '';
 
         if (className) {
             classes += ' ' + className;
